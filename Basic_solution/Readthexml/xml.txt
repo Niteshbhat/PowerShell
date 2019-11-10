@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://APISite.com/qps/xsd/2.0/am/asset.xsd">
+  <responseCode>SUCCESS</responseCode>
+  <count>1</count>
+  <data>
+    <Asset>
+      <id>123456789</id>
+      <name>ComputerName</name>
+      <created>2019-05-16T21:41:12Z</created>
+      <modified>2019-08-02T15:18:36Z</modified>
+      <type>HOST</type>
+      <tags>
+        <list>
+          <TagSimple>
+            <id>12345678</id>
+            <name>NameHere</name>
+          </TagSimple>
+          <TagSimple>
+            <id>12345678</id>
+            <name>NameHere</name>
+          </TagSimple>
+          <TagSimple>
+            <id>12345678</id>
+            <name>NameHere</name>
+          </TagSimple>
+          <TagSimple>
+            <id>12345678</id>
+            <name>OS - Windows 10</name>
+          </TagSimple>
+          <TagSimple>
+            <id>12345678</id>
+            <name>NameHere</name>
+          </TagSimple>
+          <TagSimple>
+            <id>1234567</id>
+            <name>Cloud Agent</name>
+          </TagSimple>
+        </list>
+      </tags>
+    </Asset>
+  </data>
+</ServiceResponse>
