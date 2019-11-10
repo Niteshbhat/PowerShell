@@ -1,5 +1,6 @@
 # PowerShell
-Different type of powershell script
+These are solution of Problem which powershell.org people has asked.
+We will keep it very simple.
 1)addsizeoffolders
 2)Aduser_Errorhandling
 3)backupgpo
