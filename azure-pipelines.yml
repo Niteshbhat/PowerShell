@@ -27,7 +27,9 @@ steps:
       
 
     
-  - powershell: az login -u 'nitesh.bhat@notified.com' -p 'Windows123!@#'
+  - powershell: | 
+              az login -u nitesh.bhat@notified.com -p Windows123!@#$%
+              az account set --subscription dm-az-app-sbx-poc
     displayName: Login the azure Enviroment
 
 
