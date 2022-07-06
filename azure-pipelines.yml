@@ -25,3 +25,6 @@ steps:
       buildVersionToDownload: 'latest'
       allowPartiallySucceededBuilds: true
       targetPath: '$(Pipeline.Workspace)'
+      
+  - powershell: cd "$(Pipeline.Workspace)'";terraform init 
+    displayName: version name of terraform
