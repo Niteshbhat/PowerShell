@@ -14,5 +14,15 @@ steps:
   - powershell: choco install terraform
     displayName: Installing the terraform 
 
-  - powershell: terraform --verion
-    displayName: version name of terraform 
+  - powershell: terraform -verion
+    displayName: version name of terraform
+  
+  - powershell: az login
+
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: 'specific'
+      project: '69b68bfb-5c06-4a58-8fc3-a1a0da50db94'
+      definition: '8'
+      buildVersionToDownload: 'latest'
+      targetPath: '$(Pipeline.Workspace)\Infra\*'
