@@ -14,10 +14,9 @@ steps:
   - powershell: choco install terraform
     displayName: Installing the terraform 
 
-  - powershell: terraform -verion
+  - powershell: terraform --version
     displayName: version name of terraform
-  
-  - powershell: az login
+
 
   - task: DownloadPipelineArtifact@2
     inputs:
