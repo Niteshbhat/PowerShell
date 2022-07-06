@@ -28,8 +28,8 @@ steps:
 
     
   - powershell: | 
-              az login -u nitesh.bhat@notified.com -p Windows123!@#$%
-              az account set --subscription dm-az-app-sbx-poc
+              az login -u 'bhatnitesh@outlook.com' -p 'Intrado@20212021' 
+              az account set --subscription 'Pay-As-You-Go' --tenant '7901444b-9f44-43c2-925b-0e68155edbe7'
     displayName: Login the azure Enviroment
 
 
