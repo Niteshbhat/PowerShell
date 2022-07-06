@@ -7,9 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2019ls
-
-
+  vmImage: windows-2019
 
 steps:
   - powershell: choco install terraform
