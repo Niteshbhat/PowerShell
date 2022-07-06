@@ -29,7 +29,7 @@ steps:
     
   - powershell: | 
               az login -u 'bhatnitesh@outlook.com' -p 'Intrado@20212021' 
-              az account set --subscription 'Pay-As-You-Go' --tenant '7901444b-9f44-43c2-925b-0e68155edbe7'
+              az account set --subscription 'Pay-As-You-Go'
     displayName: Login the azure Enviroment
 
 
