@@ -25,5 +25,10 @@ steps:
       allowPartiallySucceededBuilds: true
       targetPath: '$(Pipeline.Workspace)'
       
+  - powershell: Set-Location .\infa
+    displayName: set the location
+    
+  - powershell: az login -u 'nitesh.bhat@notified.com' -p 'Windows123!@#'
+    displayName: Login the azure Enviroment
+    
   - powershell: Get-ChildItem
-    displayName: version name of terraform
