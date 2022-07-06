@@ -16,12 +16,12 @@ steps:
 
   - powershell: terraform --version
     displayName: version name of terraform
-
-
+      
   - task: DownloadPipelineArtifact@2
     inputs:
       buildType: 'specific'
       project: '69b68bfb-5c06-4a58-8fc3-a1a0da50db94'
       definition: '8'
       buildVersionToDownload: 'latest'
-      targetPath: '$(Pipeline.Workspace)\Infra\*'
+      allowPartiallySucceededBuilds: true
+      targetPath: '$(Pipeline.Workspace)'
