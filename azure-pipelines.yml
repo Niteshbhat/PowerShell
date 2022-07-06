@@ -7,7 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2019
+  vmImage: windows-2019ls
+  ls
 
 
 steps:
@@ -26,5 +27,5 @@ steps:
       allowPartiallySucceededBuilds: true
       targetPath: '$(Pipeline.Workspace)'
       
-  - powershell: cd "$(Pipeline.Workspace)'";terraform init 
+  - powershell: Get-ChildItem
     displayName: version name of terraform
